@@ -23,6 +23,12 @@ body {
 .dflex {
     display: flex;
 }
+.ButtonWhite{
+    background-color: var(--discord-white);
+    padding:.25rem 5.rem;
+    border-radius: .25rem;
+
+}
 
 .reverseRow {
     flex-direction: row-reverse;
@@ -30,6 +36,11 @@ body {
 
 .bottom {
     align-items: flex-end;
+}
+img{
+    width: 50%;
+    max-width: 100%;
+    min-width: 1rem;
 }
 
 /* #endregion comuni */
@@ -108,28 +119,31 @@ body {
 
 #app_header{
 .Logo{
-    width: 25%;
+    flex-grow: 1;
+    max-width: 100%;
+    align-items: center;
 }
 .menu{
     width: 50%;
     text-align: center;
+    justify-content: space-around;
 }
 .Login{
-    width: 255;
+    width: 25%;
     text-align: end;
 }
 }
 
 header {
-    height: 12vh;
     justify-content: center;
     background-color: var(--discord-header);
+    padding: .75rem;
     
 }
 
 .navigation {
-    /* justify-content: space-between; */
     width: 70vw;
+    align-items: center;
 }
 
 /* #endregion header */
