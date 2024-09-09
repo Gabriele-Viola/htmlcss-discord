@@ -57,7 +57,7 @@ a{
 }
 
 .module {
-    height: 70vh;
+    /* height: 70vh; */
     justify-content: center;
     align-items: center;
 }
@@ -297,13 +297,25 @@ main {}
 .debuginfo{
     background-color: red;
 }
+.debusocial{
+    background-color: blue;
+}
 .infoNservices {
-    width: calc( ( 100% / 12 ) * 2 );
-    flex-direction: column;
     font-size: .25;
     height: 100%;
+    .Title{
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: var(--discord-footertxt);
+    }
 }
 
+.col-2{
+    width: calc((100% / 12) * 2);
+}
+.col-4{
+    width: calc((100% / 12) * 4);
+}
 .divider {
     border-bottom: 1px solid grey;
 }
