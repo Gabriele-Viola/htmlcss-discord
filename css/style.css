@@ -1,79 +1,102 @@
 /* #region Comuni */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+:root {
+    --discord-header: #3161e0;
+    --discord-white: #ffffff;
+    --discord-black: #23272a;
+    --discord-grey: #f6f6f6;
+    --discord-button: #8ea1e1;
+    --discord-footertxt: #7289da;
+    --discord-divider: #323a4b;
+
+}
+
+body {
     margin: auto;
 }
 
-.dflex{
+.dflex {
     display: flex;
 }
-.reverseRow{
+
+.reverseRow {
     flex-direction: row-reverse;
 }
-.bottom{
+
+.bottom {
     align-items: flex-end;
 }
+
 /* #endregion comuni */
 /* #region debug */
-.debug{
+.debug {
     border: 1px dashed;
 }
-.debug header{
+
+.debug header {
     background-color: aquamarine;
 }
 
-.debug .navigation{
+.debug .navigation {
     background-color: orange;
-    border:1px dashed;
+    border: 1px dashed;
 }
 
-.debugmodulereverse{
+.debugmodulereverse {
     background-color: grey;
 }
-.debugheadbanner{
-    background-color: blue;    
+
+.debugheadbanner {
+    background-color: blue;
 }
-.debugheadermodule{
+
+.debugheadermodule {
     background-color: red;
 
 }
-.debugarticlebox{
+
+.debugarticlebox {
     background-color: cyan;
 }
-.debugarticlesect{
+
+.debugarticlesect {
     border: 1px dashed;
 }
-.debugimg{
+
+.debugimg {
     background-color: rosybrown;
     border: 1px dashed;
 }
 
-.debugdownload{
+.debugdownload {
     background-color: green;
 
 }
 
-.debugersocial{
+.debugersocial {
     background-color: pink;
 }
 
-.debuginfo{
+.debuginfo {
     border: 1px dashed white;
     background-color: rgb(0, 173, 142);
 }
-.debugfooterlogo{
+
+.debugfooterlogo {
     border: 1px dashed;
-    background-color:rosybrown ;
+    background-color: rosybrown;
 }
-.debugfooter{
+
+.debugfooter {
     background-color: rgb(0, 53, 12);
 }
-.debugbutton{
+
+.debugbutton {
     border: 1px dashed black;
 }
 
@@ -82,79 +105,86 @@ body{
 
 
 /* #region header */
-.LogoA{
+
+#app_header{
+.Logo{
     width: 25%;
 }
-
-.search{
+.menu{
     width: 50%;
-    text-align:center;
+    text-align: center;
 }
 .Login{
-    width: 25%;
-    text-align: right;
+    width: 255;
+    text-align: end;
 }
-header{
-    height: 20vh;
-    align-items: center;
-    justify-content: center;
 }
 
-.navigation{
-    justify-content: space-between;
-    width: 90vw;
-    /* height: 10vh; */
-    /* line-height: 10vh; */
+header {
+    height: 12vh;
+    justify-content: center;
+    background-color: var(--discord-header);
+    
+}
+
+.navigation {
+    /* justify-content: space-between; */
+    width: 70vw;
 }
 
 /* #endregion header */
 
 /* #region main */
-main{
-}
-.banner{
+main {}
+
+.banner {
     width: 80vw;
     height: 80%;
 }
 
 
-.module{
+.module {
     height: 80vh;
     justify-content: center;
     align-items: center;
 }
-article{
+
+article {
     width: 60%;
 }
-aside{
+
+aside {
     width: 40%;
 }
-.Bigdownload{
+
+.Bigdownload {
     height: 70vh;
     justify-content: center;
     align-items: center;
 }
+
 /* #endregion main */
 
 
 
 /* #footer region */
-.social{
+.social {
     width: 32%;
 }
-.infoNservices{
+
+.infoNservices {
     width: 17%;
 }
-.divider{
+
+.divider {
     border-bottom: 1px solid grey;
 }
 
 
-.moduleF{
+.moduleF {
     height: 5vh;
     justify-content: center;
     align-items: flex-end;
 }
+
 /* #endfooter region */
-
-
