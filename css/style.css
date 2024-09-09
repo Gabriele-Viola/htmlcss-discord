@@ -72,7 +72,7 @@ a{
     width: 100vw;
     filter: invert(100%) sepia(25%) saturate(6%) hue-rotate(228deg) brightness(111%) contrast(93%);
     position: relative;
-    top: 20px;
+    top: 4px;
 }
 .rotate{
     transform: rotate(180deg);
@@ -82,8 +82,6 @@ a{
 .wave-reverse{
     width: 100vw;
     filter: invert(100%) sepia(25%) saturate(6%) hue-rotate(228deg) brightness(111%) contrast(93%);
-    position: relative;
-    top: 20px;
 }
 
 .bottom {
@@ -285,7 +283,7 @@ main {}
 
 .Bigdownload {
     background-color: var(--discord-grey);
-    height: 70vh;
+    /* height: 70vh; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -302,9 +300,21 @@ main {}
     }
 }
 .conteinerP{
-    width: 150px;
-    background-color: red;
-    color: red;
+    width: 90%;
+    margin: auto;
+}
+.adventure{
+    margin: auto;
+    height: 10vh;
+    background-image: url(../img/stars.svg);
+    background-position: center top;
+    width: 70%;
+    border: 1px dashed black;
+    .Title{
+        font-size: 1.25rem;
+        line-height: 10vh;
+    }
+  
 }
 
 /* #endregion main */
