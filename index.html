@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Discord Layaout</title>
 </head>
-<body class="debug">
+
+<body class="debu">
     <header id="app_header" class="dflex">
         <div class="navigation dflex">
             <figure class="Logo">
-                <img class="Logo" src="./img/logo.svg" alt="">
+                <a href=""><img src="./img/logo.svg" alt=""></a>
             </figure>
+            <!-- Logo Discord -->
             <div class="menu dflex">
                 <a href="#">Scarica</a>
                 <a href="#">Perché Discord</a>
@@ -20,31 +22,56 @@
                 <a href="#">Sicurezza</a>
                 <a href="#">Assistenza</a>
             </div>
-
-
-            <a class="Login ButtonWhite" href="#">Accedi</a>
+            <!-- menu -->
+            <span class="Login">
+                <a class="ButtonWhite" href="#">Accedi</a>
+            </span>
+            <!-- Login -->
         </div>
-        <!-- /.conteiner -->
+        <!-- header menu -->
     </header>
     <!-- header -->
     <main>
-        <section class="module debugheadermodule dflex">
-            <div class="banner debugheadbanner">
+        <section class="module jumbo dflex">
+
+            <div class="banner headjumbo">
+                <div class="Title">
+                    <div class="Titolo">Il tuo posto per parlare</div>
+                </div>
+                <div class="Pharag Margin-Auto line-height dflex">
+                    <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunit&#224; artistica mondiale, o
+                        semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende
+                        pi&#249; facile chiacchierare ogni giorno e ritrovarsi pi&#249; spesso.</p>
+                </div>
+                <div class="choose">
+                    <a href="" class="ButtonWhite bigbutton">
+                         &#11015; Scarica per Mac</a>
+                    <!-- /.ButtonWhite -->
+                    <a href="" class="ButtonBlack bigbutton">
+                        Apri Discord nel tuo browser
+                    </a>
+                    <!-- /.ButtonBlack -->
+                </div>
+
             </div>
             <!-- /.banner -->
         </section>
         <!-- /.module 1 -->
-        <section class="module dflex">
-            <div class="banner dflex debugarticlebox">
-                <article>
-                    <!-- contenuto dell'articolo -->
+        <section class="module dflex moreheihgt">
+            <div class="banner dflex debugarticlebox py-4 my-5">
+                <article class="firstsection">
+                    <figure>
+                        <img src="./img/item1.svg" alt="">
+                    </figure>
                 </article>
-                <aside class="debugimg">
-                    <!-- immagine dell'articolo -->
+                <aside class="debugimg py-4 secondsection">
+                    <div class="Title"> Un luogo a invito con tutto lo spazio necessario per parlare</div>
+                    <div class="Pharag line-height ">i server Discor sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</div>
                 </aside>
             </div>
             <!-- /.content -->
         </section>
+        <img class="wave"src="./img/wave.svg" alt="">
         <!-- /.module 2 -->
         <section class="module dflex debugmodulereverse">
             <div class="banner dflex reverseRow debugarticlebox">

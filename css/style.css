@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 :root {
@@ -16,36 +17,82 @@
 
 }
 
-body {
-    margin: auto;
+
+a{
+    text-decoration: none;
+    color: var(--discord-white);
+}
+.line-height{
+    line-height: 1.5rem;
 }
 
 .dflex {
     display: flex;
 }
-.ButtonWhite{
-    background-color: var(--discord-white);
-    padding:.25rem 5.rem;
-    border-radius: .25rem;
-
-}
 
 .reverseRow {
     flex-direction: row-reverse;
+}
+.ButtonWhite{
+    background-color: var(--discord-white);
+    padding: .5rem .75rem;
+    border-radius: 100px;
+    color: var(--discord-black);
+    margin: 1rem;
+}
+.ButtonBlack{
+    background-color: var(--discord-black);
+    padding: .5rem .75rem;
+    border-radius: 100px;
+    color: var(--discord-white);
+    margin: 1rem;
+}
+
+.bigbutton{
+    font-weight: bold;
+    padding: 1rem 1.25rem;
+}
+
+.module {
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    width: 70vw;
+    justify-content: space-between;
+    align-items: git a;
+}
+.wave{
+    width: 100vw;
 }
 
 .bottom {
     align-items: flex-end;
 }
 img{
-    width: 50%;
     max-width: 100%;
     min-width: 1rem;
 }
-
 /* #endregion comuni */
+
+/* #region utility */
+.Margin-Auto{
+    margin: auto;
+}
+.moreheihgt{
+    height: 100vh;
+}
+
+
+/* #endregion utility */
+
+
+
+
+
 /* #region debug */
-.debug {
+.debug *{
     border: 1px dashed;
 }
 
@@ -62,11 +109,11 @@ img{
     background-color: grey;
 }
 
-.debugheadbanner {
+.debug .headjumbo {
     background-color: blue;
 }
 
-.debugheadermodule {
+.debug .jumbo {
     background-color: red;
 
 }
@@ -118,32 +165,31 @@ img{
 /* #region header */
 
 #app_header{
+
+    background-color: var(--discord-header);
+    padding: 1rem;
 .Logo{
     flex-grow: 1;
     max-width: 100%;
     align-items: center;
 }
 .menu{
-    width: 50%;
+    flex-grow: 1;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
 .Login{
-    width: 25%;
+    flex-grow: 1;
     text-align: end;
+    font-weight: bold;
 }
 }
-
-header {
-    justify-content: center;
-    background-color: var(--discord-header);
-    padding: .75rem;
-    
-}
-
 .navigation {
     width: 70vw;
-    align-items: center;
+    margin: auto;
+    margin-top: .5rem;
+    justify-content: space-between;
 }
 
 /* #endregion header */
@@ -151,24 +197,55 @@ header {
 /* #region main */
 main {}
 
-.banner {
-    width: 80vw;
-    height: 80%;
+/* #region Jumbo */
+.jumbo{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    text-align: center;
+    color: var(--discord-white);
 }
 
 
-.module {
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
+.Title{
+    color: var(--discord-white);
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
 }
-
-article {
+.Titolo{
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.Pharag{
     width: 60%;
 }
 
-aside {
-    width: 40%;
+.choose{
+    margin:2rem;
+}
+
+.headjumbo{
+    width: 80vw;
+}
+
+/* #endregion Jumbo */
+
+
+
+.firstsection {
+    width: 60%;
+}
+
+
+.secondsection {
+    width: 30%;
+    .Title{
+        color: var(--discord-black);
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .Pharag{
+        color: var(--discord-white);
+    }
 }
 
 .Bigdownload {
