@@ -284,9 +284,27 @@ main {}
 
 
 .Bigdownload {
+    background-color: var(--discord-grey);
     height: 70vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    .Title{
+        color: var(--discord-black);
+        font-weight: 900;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .Pharag{
+        text-align: center;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+}
+.conteinerP{
+    width: 150px;
+    background-color: red;
+    color: red;
 }
 
 /* #endregion main */
