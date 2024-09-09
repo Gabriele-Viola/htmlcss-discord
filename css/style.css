@@ -29,6 +29,9 @@ a{
 .dflex {
     display: flex;
 }
+.column{
+    flex-direction: column;
+}
 
 .reverseRow {
     flex-direction: row-reverse;
@@ -61,10 +64,26 @@ a{
 .banner {
     width: 70vw;
     justify-content: space-between;
-    align-items: git a;
+}
+.bg-light{
+    background-color: var(--discord-grey);
 }
 .wave{
     width: 100vw;
+    filter: invert(100%) sepia(25%) saturate(6%) hue-rotate(228deg) brightness(111%) contrast(93%);
+    position: relative;
+    top: 20px;
+}
+.rotate{
+    transform: rotate(180deg);
+    width: 100vw;
+    filter: invert(100%) sepia(25%) saturate(6%) hue-rotate(228deg) brightness(111%) contrast(93%);
+}
+.wave-reverse{
+    width: 100vw;
+    filter: invert(100%) sepia(25%) saturate(6%) hue-rotate(228deg) brightness(111%) contrast(93%);
+    position: relative;
+    top: 20px;
 }
 
 .bottom {
@@ -117,16 +136,19 @@ img{
     background-color: red;
 
 }
+.debug .banner{
+    background-color: lime;
+}
 
-.debugarticlebox {
+.debug article {
     background-color: cyan;
 }
 
-.debugarticlesect {
+.debug .banner {
     border: 1px dashed;
 }
 
-.debugimg {
+.debug article {
     background-color: rosybrown;
     border: 1px dashed;
 }
@@ -232,21 +254,34 @@ main {}
 
 
 .firstsection {
-    width: 60%;
+    width: 55%;
 }
 
 
 .secondsection {
-    width: 30%;
+    width: 35%;
+    height: 300px;
+
     .Title{
         color: var(--discord-black);
-        font-weight: bold;
-        font-size: 2rem;
+        font-weight: 800;
+        font-size: 2.25rem;
+        width: 100%;
     }
     .Pharag{
         color: var(--discord-white);
+        text-align: start;
+        width: 100%;
+        color: var(--discord-black);
+
     }
 }
+
+
+
+
+
+
 
 .Bigdownload {
     height: 70vh;
